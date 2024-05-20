@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tim's To-Do's</title>
+        <link href="style.css" rel="stylesheet">
+        <script src="script.js" defer></script>
+        <meta name="author" content="Tim Henning">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <h1>Tim's To-Do's</h1>
+        </header>
+
+        <main>
+            <section id="button-container">
+                <button id="new-button">Add</button>
+                <!-- The Modal -->
+                <div id="newModal" class="modal">
+                    
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <span class="close">&times;</span>
+                          <h2>Add a New To-Do</h2>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <label for="Title">Title</label>
+                            <input type="text" id="title" name="title" placeholder="Wash dishes...">
+                            <label for="status">Status</label>
+                            <select id="status" name="status">
+                                <option value="to-do">To-Do</option>
+                                <option value="in-progress">In Progress</option>
+                                <option value="done">Done</option>
+                            </select>
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description" rows="5" cols="25" placeholder="Add a description here...."></textarea>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button id="create-button">Create</button>
+                        </div>
+                      </div>
+
+                </div>
+
+                <button>Delete</button>
+            </section>
+
+            <section id="to-do-list">
+                <div class="header-container">
+                    <h3>To-Do</h3>
+                </div>
+                <div class="content-container">
+
+                </div>
+            </section>
+
+            <section id="in-progress-list">
+                <div class="header-container">
+                    <h3>In Progress</h3>
+                </div>
+                <div class="content-container">
+
+                </div>
+            </section>
+
+            <section id="done-list">
+                <div class="header-container">
+                    <h3>Done</h3>
+                </div>
+                <div class="content-container">
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            
+        </footer>
+    </body>
+</html>
