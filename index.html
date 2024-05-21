@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Tim's To-Do's</title>
-        <link href="style.css" rel="stylesheet">
-        <script src="script.js" defer></script>
-        <meta name="author" content="Tim Henning">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
-    </head>
 
-    <body>
-        <header>
-            <h1>Tim's To-Do's</h1>
-        </header>
+<head>
+    <title>Tim's To-Do's</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <meta name="author" content="Tim Henning">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+</head>
 
-        <main>
-            <section id="button-container">
-                <button id="new-button">Add</button>
-                <button id="delete-button">Delete</button>
-            </section>
+<body>
+    <header>
+        <h1>Tim's To-Do's</h1>
+    </header>
 
-            <section id="to-do-list">
+    <main>
+        <section id="button-container">
+            <button id="new-button">Add</button>
+            <button id="delete-button">Delete</button>
+        </section>
+
+        <!-- Columns -->
+
+        <div class="column-wrapper">
+            <section id="to-do-list" class="column">
                 <div class="header-container">
                     <h3>To-Do</h3>
                 </div>
@@ -31,7 +35,7 @@
                 </div>
             </section>
 
-            <section id="in-progress-list">
+            <section id="in-progress-list" class="column">
                 <div class="header-container">
                     <h3>In Progress</h3>
                 </div>
@@ -40,7 +44,7 @@
                 </div>
             </section>
 
-            <section id="done-list">
+            <section id="done-list" class="column">
                 <div class="header-container">
                     <h3>Done</h3>
                 </div>
@@ -48,18 +52,19 @@
 
                 </div>
             </section>
+        </div>
 
-            <!-- The Modal -->
-            <div id="newModal" class="modal">
-                    
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <div class="modal-header">
-                      <span class="close">&times;</span>
-                      <h2>Add a New To-Do</h2>
-                    </div>
-                    <div class="modal-body">
-                      <form>
+        <!-- The Modal -->
+        <div id="newModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Add a New To-Do</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
                         <label for="Title">Title</label>
                         <input type="text" id="title" name="title" placeholder="Wash dishes...">
                         <label for="status">Status</label>
@@ -69,19 +74,21 @@
                             <option value="done">Done</option>
                         </select>
                         <label for="description">Description</label>
-                        <textarea name="description" id="description" placeholder="Add a description here...."></textarea>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button id="create-button">Create</button>
-                    </div>
-                  </div>
-
+                        <textarea name="description" id="description"
+                            placeholder="Add a description here...."></textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="create-button">Create</button>
+                </div>
             </div>
-        </main>
 
-        <footer>
-            
-        </footer>
-    </body>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made by Tim Henning</p>
+    </footer>
+</body>
+
 </html>
