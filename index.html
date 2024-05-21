@@ -19,37 +19,7 @@
         <main>
             <section id="button-container">
                 <button id="new-button">Add</button>
-                <!-- The Modal -->
-                <div id="newModal" class="modal">
-                    
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                          <span class="close">&times;</span>
-                          <h2>Add a New To-Do</h2>
-                        </div>
-                        <div class="modal-body">
-                          <form>
-                            <label for="Title">Title</label>
-                            <input type="text" id="title" name="title" placeholder="Wash dishes...">
-                            <label for="status">Status</label>
-                            <select id="status" name="status">
-                                <option value="to-do">To-Do</option>
-                                <option value="in-progress">In Progress</option>
-                                <option value="done">Done</option>
-                            </select>
-                            <label for="description">Description</label>
-                            <textarea name="description" id="description" placeholder="Add a description here...."></textarea>
-                          </form>
-                        </div>
-                        <div class="modal-footer">
-                          <button id="create-button">Create</button>
-                        </div>
-                      </div>
-
-                </div>
-
-                <button>Delete</button>
+                <button id="delete-button">Delete</button>
             </section>
 
             <section id="to-do-list">
@@ -78,6 +48,36 @@
 
                 </div>
             </section>
+
+            <!-- The Modal -->
+            <div id="newModal" class="modal">
+                    
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">&times;</span>
+                      <h2>Add a New To-Do</h2>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <label for="Title">Title</label>
+                        <input type="text" id="title" name="title" placeholder="Wash dishes...">
+                        <label for="status">Status</label>
+                        <select id="status" name="status">
+                            <option value="to-do">To-Do</option>
+                            <option value="in-progress">In Progress</option>
+                            <option value="done">Done</option>
+                        </select>
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" placeholder="Add a description here...."></textarea>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button id="create-button">Create</button>
+                    </div>
+                  </div>
+
+            </div>
         </main>
 
         <footer>

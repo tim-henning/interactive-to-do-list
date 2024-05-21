@@ -18,6 +18,40 @@ header h1 {
     font-style: normal;
 }
 
+/* Button styles */
+
+#button-container {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+button {
+    width: 70px;
+    height: 30px;
+    font-size: 1rem;
+    background-color: #20A4F3;
+    border-style: none;
+    border-radius: 3px;
+    color: #fefefe;
+}
+
+button:hover {
+    border: 1px solid #fefefe;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+button:active {
+    border: 1px solid #888;
+  }
+
+/* Modal design */
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -87,21 +121,6 @@ header h1 {
   
   .modal-footer {
     padding: 10px 16px;
-    background-color: #20A4F3;
-    color: white;
-  }
-
-  #create-button {
-    width: 15%;
-    height: 25px;
     background-color: #fefefe;
-    border-style: none;
-  }
-
-  #create-button:hover {
-    cursor: pointer;
-  }
-
-  #create-button:active {
-    border: 1px solid #888;
+    color: white;
   }
