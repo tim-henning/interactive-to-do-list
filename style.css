@@ -106,25 +106,17 @@ footer p {
 /* The Modal (background) */
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     padding-top: 20%;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: hidden;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -182,6 +174,8 @@ footer p {
     cursor: pointer;
 }
 
+/* Modal design */
+
 .modal-header {
     padding: 20px 16px;
     background-color: #20A4F3;
@@ -191,6 +185,38 @@ footer p {
 .modal-body {
     padding: 10px 16px;
     height: 200px;
+}
+
+.modal-body form {
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 1rem;
+    width: 10rem;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#status {
+    width: 10rem;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+#description {
+    width: 20rem;
+    height: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    resize: none;
+    overflow: scroll;
 }
 
 .modal-footer {
