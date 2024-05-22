@@ -1,3 +1,22 @@
+// Get the title
+const title = document.getElementById("title");
+
+// Get the status
+const status = document.getElementById("status");
+
+// Get the description
+const description = document.getElementById("description");
+
+// Get the create button
+const create = document.getElementById("create-button");
+
+// Create a new card based on the status
+function createCard() {
+  if(status === "To-Do") {
+    
+  }
+}
+
 
 // Modal section
 
